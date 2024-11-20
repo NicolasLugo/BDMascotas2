@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText" >
+
+    <LinearLayout
+        android:layout_width="320dp"
+        android:layout_height="685dp"
+        android:orientation="vertical"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="44dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Formulario de Ingreso de Mascotas"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            />
+
+        <EditText
+            android:id="@+id/txtCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Código del chip"
+            android:minHeight="48dp"
+            />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la mascota"
+            android:minHeight="48dp"
+            />
+
+        <Spinner
+            android:id="@+id/spMascota"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="Mascota"
+            android:minHeight="48dp"
+            />
+
+        <EditText
+            android:id="@+id/txtDueno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre de la mascota"
+            android:minHeight="48dp"
+            />
+
+        <EditText
+            android:id="@+id/txtDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Dirección de residencia"
+            android:minHeight="48dp"
+            />
+
+        <Button
+            android:id="@+id/btnEnviar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="enviarDatosFirestore"
+            android:text="Enviar Datos"
+            />
+
+        <Button
+            android:id="@+id/btnCargar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="CargarLista"
+            android:text="CargarDatos"
+            />
+
+        <ListView
+            android:id="@+id/lista"
+            android:layout_width="match_parent"
+            android:layout_height="199dp"
+            />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
