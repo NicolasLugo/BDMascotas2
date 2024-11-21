@@ -57,7 +57,7 @@
             android:id="@+id/txtDueno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Nombre de la mascota"
+            android:hint="Nombre del dueño"
             android:minHeight="48dp"
             />
 
@@ -81,7 +81,7 @@
             android:id="@+id/btnCargar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="CargarLista"
+            android:onClick="cargarLista"
             android:text="CargarDatos"
             />
 

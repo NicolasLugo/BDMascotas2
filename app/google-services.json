@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1018183686225",
+    "project_id": "bdmascotas-e6fb3",
+    "storage_bucket": "bdmascotas-e6fb3.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1018183686225:android:5ef01333a96019f77cc070",
+        "android_client_info": {
+          "package_name": "com.example.bdmascotas2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdW88AUt0FN06wCpuk-AqxaefrYm_mWRI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
